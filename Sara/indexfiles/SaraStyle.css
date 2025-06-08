@@ -52,9 +52,9 @@ body {
 
 .home-link img {
   width: 100%;
-  max-width: 800px;
+  max-width: 500px;
   height: auto;
-  border-radius: 8px;
+  border-radius: 15px;
 }
 
 /* Responsive Adjustments */

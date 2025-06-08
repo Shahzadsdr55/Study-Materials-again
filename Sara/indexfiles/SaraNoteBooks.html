@@ -1,31 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body style="text-align: center; background-color: aqua;">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Class 5 Books</title>
+  <style>
+    body {
+      background-color: rgb(124, 239, 239);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+    }
 
-    <div style="text-align: center;">
-        <a href="/Sara/SubIndexFiles/Computer2ndNotebook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd Computer NoteBook</h1></button></a><img src="/Sara/NoteBooks/Computer2nd/IMG_20250520_204032793.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/EnglishLiterature2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd EnglishLiterature NoteBook</h1></button></a><img src="/Sara/NoteBooks/English2nd/Literature/IMG_20250520_203313457.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/EngishGrammar2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd EngishGrammar NoteBook</h1></button></a><img src="/Sara/NoteBooks/English2nd/Grammar/IMG_20250520_203313457.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/EVS2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd EVS NoteBook</h1></button></a><img src="/Sara/NoteBooks/EVS2nd/IMG_20250520_203629311.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/GK2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd GK NoteBook</h1></button></a><img src="/Sara/NoteBooks/GK2nd/NoteBook/download.png" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/Hindi2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd Hindi NoteBook</h1></button></a><img src="/Sara/NoteBooks/Hindi2nd/IMG_20250520_204414832.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/IS2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd IS NoteBook</h1></button></a><img src="/Sara/NoteBooks/IS2nd/IMG_20250520_203008210.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/Math2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd Math NoteBook</h1></button></a><img src="/Sara/NoteBooks/Math2nd/IMG_20250520_203834725.jpg" alt="Image" width="500px" height="300px"><br><br>
-        <a href="/Sara/SubIndexFiles/Urdu2ndNoteBook.html"><button style="width: 300px; height: 150px; background-color: rgb(0, 255, 100);"><h1 style="color: green;">Click here to open class 2nd Urdu NoteBook</h1></button></a><img src="/Sara/NoteBooks/Urdu2nd/IMG_20250520_204159092.jpg" alt="Image" width="500px" height="300px"><br><br>
+    .book-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .book-card {
+      width: 90%;
+      max-width: 600px;
+      background: white;
+      padding: 10px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .book-card button {
+      width: 100%;
+      height: auto;
+      padding: 15px;
+      background-color: rgb(0, 255, 100);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .book-card h1 {
+      font-size: 1.2rem;
+      color: green;
+      margin: 0;
+    }
+
+    .book-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 10px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-top: 40px;
+    }
+
+    .nav-links img {
+      width: 80%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .nav-links {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="book-container">
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/Computer2ndNotebook.html">
+        <button><h1>Click here to open class 2nd Computer Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/Computer2nd/IMG_20250520_204032793.jpg" alt="Computer Book">
     </div>
 
-    <br><br><br><br>
-    
-      <div style="display: flex; justify-content: center;">
-        <a href="/Sara/indexfiles/SaraIndex.html"><img  link src="/GoToBackPage.png" alt="link 1" width="800px" height="150px"></a>
-        <a href="/index.html"><img link src="/ForHomePage.jpeg" alt="link2" width="800px" height="150px"></a>
-      </div>
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/EnglishLiterature2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd English Literature Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/English2nd/Literature/IMG_20250520_203313457.jpg" alt="English Literature Book">
+    </div>
 
-    
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/EngishGrammar2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd English Grammar Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/English2nd/Grammar/IMG_20250520_203313457.jpg" alt="English Grammar Book">
+    </div>
+
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/EVS2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd EVS Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/EVS2nd/IMG_20250520_203629311.jpg" alt="SST Book">
+    </div>
+
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/GK2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd GK Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/GK2nd/NoteBook/download.png" alt="GK Book">
+    </div>
+
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/Hindi2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd Hindi Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/Hindi2nd/IMG_20250520_204414832.jpg" alt="Hindi Book">
+    </div>
+
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/IS2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd IS Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/IS2nd/IMG_20250520_203008210.jpg" alt="IS Book">
+    </div>
+
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/Math2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd Math Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/Math2nd/IMG_20250520_203834725.jpg" alt="Math Book">
+    </div>
+
+    <div class="book-card">
+      <a href="/Sara/SubIndexFiles/Urdu2ndNoteBook.html">
+        <button><h1>Click here to open class 2nd Urdu Book</h1></button>
+      </a>
+      <img src="/Sara/NoteBooks/Urdu2nd/IMG_20250520_204159092.jpg" alt="Science Book">
+    </div>
+
+  </div>
+
+
+
+  <div class="nav-links">
+    <a href="/Sara/indexfiles/SaraIndex.html">
+      <img src="/GoToBackPage.png" alt="Back to Sara Index">
+    </a>
+    <a href="/index.html">
+      <img src="/ForHomePage.jpeg" alt="Home Page">
+    </a>
+  </div>
+
 </body>
 </html>
